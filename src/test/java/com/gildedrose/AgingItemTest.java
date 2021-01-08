@@ -26,7 +26,7 @@ public class AgingItemTest {
         app.items[0].quality = 20;
         app.calculateNextDay();
         assert(app.items[0].sellIn == 0);
-        assert(app.items[0].quality == 21);
+        assert(app.items[0].quality == 12);
         app.calculateNextDay();
         assert(app.items[0].sellIn == -1);
         assert(app.items[0].quality == 23);
